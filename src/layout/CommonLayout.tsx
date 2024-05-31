@@ -36,6 +36,8 @@ export default CommonLayout;
 const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
+
+  color: white;
 `;
 
 const Ul = styled.ul`
@@ -45,7 +47,7 @@ const Ul = styled.ul`
   gap: 20px;
 
   height: 70px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #2d2d2d;
 `;
 
 const Li = styled.li`
@@ -56,6 +58,10 @@ const Li = styled.li`
 
   &:hover {
     border-bottom: 1px solid #86868b;
+  }
+
+  a {
+    color: white;
   }
 `;
 
