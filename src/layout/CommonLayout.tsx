@@ -24,7 +24,9 @@ function CommonLayout() {
   return (
     <Wrapper>
       <Header />
-      <Outlet />
+      <Main>
+        <Outlet />
+      </Main>
     </Wrapper>
   );
 }
@@ -42,15 +44,21 @@ const Ul = styled.ul`
   justify-content: center;
   gap: 20px;
 
-  height: 50px;
+  height: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 `;
 
 const Li = styled.li`
   display: flex;
   align-items: center;
   padding-bottom: 5px;
+  font-size: 1.5rem;
 
   &:hover {
     border-bottom: 1px solid #86868b;
   }
+`;
+
+const Main = styled.main`
+  height: calc(100vh - 70px);
 `;
