@@ -1,20 +1,14 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { GENGRES, IMG_BASE_URL } from '../constants/movie';
+import { IMG_BASE_URL } from '../constants/movie';
 import Deffered from './Deffered';
 import { Movie } from '../types/movies';
+import { toStringGenresWithComma } from '../utils/toStringGenresWithComma';
 
 interface Props {
   data: Movie[];
   isLoading: boolean;
-}
-
-function toStringGenresWithComma(genreIds: number[]) {
-  const filteredNames = GENGRES.filter((genre) => genreIds.includes(genre.id)).map(
-    (genre) => genre.name
-  );
-  return filteredNames.slice(0, 2).join(', ');
 }
 
 function MovieCardList({ data, isLoading }: Props) {
