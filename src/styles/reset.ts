@@ -28,7 +28,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-   font-family: 'Pretendard-Regular';
+   font-family: 'Montserrat', sans-serif;
+   background-color: black;
 }
 ol, ul {
 	list-style: none;
