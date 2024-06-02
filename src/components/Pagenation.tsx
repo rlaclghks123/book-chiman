@@ -41,11 +41,11 @@ function Pagenation({ totalCount, curPage, setCurPage }: Props) {
   useEffect(() => {
     const slicedPageArray = sliceArrayByLimit(totalCount, 10);
     if (slicedPageArray) setPagenationArr(slicedPageArray);
-    else setPagenationArr([[1]]);
   }, [totalCount]);
 
   useEffect(() => {
     if (totalCount) setNumberOfPages(Math.ceil(totalCount / limit));
+    if (totalCount === 0) setPagenationArr([[1]]);
   }, [totalCount]);
 
   return (
