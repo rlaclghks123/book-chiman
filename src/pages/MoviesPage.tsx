@@ -15,6 +15,7 @@ import {
 } from '../atoms/searchAtom';
 import Pagenation from '../components/Pagenation';
 import { Movie } from '../types/movies';
+import MovieList from '../components/MovieList';
 
 interface Movies {
   data: Movie[];
@@ -44,7 +45,7 @@ function MoviesPage() {
       <SearchContainer />
       <ViewContainer>
         {curViewType === 'card-view' && <MovieCardList data={movieDatas} isLoading={isLoading} />}
-        {curViewType === 'list-view' && <div>list</div>}
+        {curViewType === 'list-view' && <MovieList data={movieDatas} isLoading={isLoading} />}
       </ViewContainer>
       <Pagenation totalCount={totalCount} curPage={curPage} setCurPage={setCurPage} />
     </Wrapper>
