@@ -6,10 +6,13 @@ import MoviesPage from './pages/MoviesPage';
 const routes = [
   {
     element: <CommonLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: '/', element: <HomePage /> },
-      { path: '/movies', element: <MoviesPage /> },
-      { path: '/*', element: <ErrorPage /> },
+      {
+        path: '/movies',
+        element: <MoviesPage />,
+      },
     ],
   },
 ];
