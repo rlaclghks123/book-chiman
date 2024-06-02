@@ -13,7 +13,7 @@ import {
   searchSortTypeState,
   viewTypeState,
 } from '../atoms/searchAtom';
-
+import Pagenation from '../components/Pagenation';
 import { Movie } from '../types/movies';
 
 interface Movies {
@@ -46,6 +46,7 @@ function MoviesPage() {
         {curViewType === 'card-view' && <MovieCardList data={movieDatas} isLoading={isLoading} />}
         {curViewType === 'list-view' && <div>list</div>}
       </ViewContainer>
+      <Pagenation totalCount={totalCount} curPage={curPage} setCurPage={setCurPage} />
     </Wrapper>
   );
 }
