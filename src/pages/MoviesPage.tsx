@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+import SearchContainer from '../components/Search/SearchContainer';
+
 function MoviesPage() {
   return (
     <Wrapper>
-      <Title>무비페이지</Title>
+      <SearchContainer />
     </Wrapper>
   );
 }
@@ -18,10 +20,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
 
-  padding-top: 5rem;
+  background-color: black;
+  padding: 2rem 10rem 0 10rem;
   box-sizing: border-box;
-`;
-
-const Title = styled.h1`
-  font-size: 3rem;
 `;
