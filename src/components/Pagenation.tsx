@@ -45,8 +45,11 @@ function Pagenation({ totalCount, curPage, setCurPage }: Props) {
 
   useEffect(() => {
     if (totalCount) setNumberOfPages(Math.ceil(totalCount / limit));
-    if (totalCount === 0) setPagenationArr([[1]]);
-  }, [totalCount]);
+    if (totalCount === 0) {
+      setPagenationArr([[1]]);
+      setCurPage(1);
+    }
+  }, [totalCount, setCurPage]);
 
   return (
     <Wrapper>

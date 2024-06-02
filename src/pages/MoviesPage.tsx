@@ -29,6 +29,7 @@ function MoviesPage() {
   const searchFilter = useRecoilValue(searchFilterState);
   const searchSort = useRecoilValue(searchSortTypeState);
   const [curPage, setCurPage] = useState(1);
+
   const {
     data: movieDatas,
     totalCount,
