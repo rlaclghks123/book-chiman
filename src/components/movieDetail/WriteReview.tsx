@@ -47,6 +47,10 @@ function WriteReview() {
       writeId,
     };
 
+    if (review === '') {
+      alert('검색어를 입력해주세요');
+      return;
+    }
     reviewMutate(result);
     setReview('');
   };

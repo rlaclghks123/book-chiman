@@ -29,6 +29,12 @@ function UpdateReviewInput({ review, id, setClickedUpdateId }: Props) {
       curReview,
       score,
     };
+
+    if (review === '') {
+      alert('검색어를 입력해주세요');
+      return;
+    }
+
     updateReviewMutate(payload);
     setClickedUpdateId(0);
   };
