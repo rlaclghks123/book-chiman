@@ -5,11 +5,6 @@ export const viewTypeState = atom({
   default: 'card-view',
 });
 
-export const searchFilterState = atom({
-  key: 'searchFilterState',
-  default: 'title',
-});
-
 export const searchKeywordState = atom({
   key: 'searchKeywordState',
   default: '',

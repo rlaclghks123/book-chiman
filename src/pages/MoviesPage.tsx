@@ -7,12 +7,7 @@ import { useMovies } from '../hooks/api/useMovies';
 import MovieCardList from '../components/MovieCardList';
 import SearchContainer from '../components/Search/SearchContainer';
 
-import {
-  searchFilterState,
-  searchKeywordState,
-  searchSortTypeState,
-  viewTypeState,
-} from '../atoms/searchAtom';
+import { searchKeywordState, searchSortTypeState, viewTypeState } from '../atoms/searchAtom';
 import Pagenation from '../components/Pagenation';
 import { Movie } from '../types/movies';
 import MovieList from '../components/MovieList';
@@ -26,7 +21,6 @@ interface Movies {
 function MoviesPage() {
   const keyword = useRecoilValue(searchKeywordState);
   const curViewType = useRecoilValue(viewTypeState);
-  const searchFilter = useRecoilValue(searchFilterState);
   const searchSort = useRecoilValue(searchSortTypeState);
   const [curPage, setCurPage] = useState(1);
 
@@ -36,7 +30,6 @@ function MoviesPage() {
     isLoading,
   }: Movies = useMovies({
     keyword,
-    searchFilter,
     curPage,
     searchSort,
   });
