@@ -4,6 +4,7 @@ export interface Review {
   review: string;
   like: number;
   createAt: string;
+  score: number;
   writeId: string | null;
 }
 
@@ -15,4 +16,5 @@ export interface AddLike {
 export interface UpdateReview {
   id: number;
   curReview: string;
+  score: number;
 }

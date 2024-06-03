@@ -9,10 +9,15 @@ import { Review } from '../../types/reviews';
 function WriteReview() {
   const { id } = useParams();
   const [review, setReview] = useState('');
+  const [score, setScore] = useState(5);
   const queryClient = useQueryClient();
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setReview(e.target.value);
+  };
+
+  const handleScrore = (e: ChangeEvent<HTMLSelectElement>) => {
+    setScore(Number(e.target.value));
   };
 
   const { mutate: reviewMutate } = useMutation({
@@ -22,9 +27,7 @@ function WriteReview() {
       alert('성공적으로 저장이 완료되었습니다!');
       queryClient.invalidateQueries({ queryKey: ['reviews'] });
     },
-    onError: () => {
-      alert('실패했습니다!');
-    },
+    onError: () => alert('실패했습니다!'),
   });
 
   const handleClick = () => {
@@ -39,6 +42,7 @@ function WriteReview() {
       movieId: id,
       review,
       like: 0,
+      score,
       createAt: new Date().toISOString().split('T')[0],
       writeId,
     };
@@ -46,11 +50,26 @@ function WriteReview() {
     reviewMutate(result);
     setReview('');
   };
+
   return (
     <Wrapper>
       <Label htmlFor="writer">
         <Writer>익명 사용자 : </Writer>
-        <Input id="writer" placeholder="댓글 추가..." onChange={handleInputChange} value={review} />
+        <Input
+          id="writer"
+          placeholder="댓글 추가..."
+          onChange={handleInputChange}
+          value={review}
+          autoComplete={'off'}
+        />
+        <Label>
+          <p>평점 ⭐️ : </p>
+          <Select onChange={handleScrore}>
+            {Array.from({ length: 5 }, (_, i) => (
+              <Option key={i} value={5 - i}>{`${5 - i}점`}</Option>
+            ))}
+          </Select>
+        </Label>
         <Button type="button" onClick={handleClick}>
           댓글
         </Button>
@@ -77,7 +96,7 @@ const Writer = styled.div`
 `;
 
 const Input = styled.input`
-  width: 80%;
+  width: 70%;
   margin-left: 15px;
   background-color: inherit;
   border: none;
@@ -107,4 +126,21 @@ const Button = styled.button`
     color: black;
     background-color: white;
   }
+`;
+
+const Select = styled.select`
+  width: 4rem;
+  height: 2rem;
+
+  margin: 0px 5px;
+  border-radius: 5px;
+
+  background-color: black;
+  color: white;
+  font-size: 16px;
+`;
+
+const Option = styled.option`
+  background: grey;
+  color: grey;
 `;

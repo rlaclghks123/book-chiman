@@ -86,6 +86,11 @@ function ReadReview() {
             <Description>
               <WriterAndTimeStamp>
                 <p>{`익명 ${idx + 1}`}</p>
+                <p>
+                  {Array.from({ length: reviews.score }, () => (
+                    <span>⭐️</span>
+                  ))}
+                </p>
                 <p>{reviews.createAt}</p>
               </WriterAndTimeStamp>
 
@@ -187,6 +192,7 @@ const WriterAndTimeStamp = styled.div`
   font-size: 20px;
 
   p {
+    margin: 0px 2px;
     &:last-child {
       font-size: 15px;
       color: grey;
