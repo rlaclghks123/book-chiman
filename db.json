@@ -4,7 +4,11 @@
       "id": 653346,
       "title": "Kingdom of the Planet of the Apes",
       "overview": "Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows. As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all that he has known about the past and to make choices that will define a future for apes and humans alike.",
-      "genre_ids": [878, 12, 28],
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
       "popularity": 7113.603,
       "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
       "release_date": "2024-05-08"
@@ -13,7 +17,11 @@
       "id": 929590,
       "title": "Civil War",
       "overview": "In the near future, a group of war journalists attempt to survive while reporting the truth as the United States stands on the brink of civil war.",
-      "genre_ids": [10752, 28, 18],
+      "genre_ids": [
+        10752,
+        28,
+        18
+      ],
       "popularity": 3151.038,
       "poster_path": "/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg",
       "release_date": "2024-04-10"
@@ -22,7 +30,11 @@
       "id": 823464,
       "title": "Godzilla x Kong: The New Empire",
       "overview": "Following their explosive showdown, Godzilla and Kong must reunite against a colossal undiscovered threat hidden within our world, challenging their very existence – and our own.",
-      "genre_ids": [878, 28, 12],
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
       "popularity": 2600.325,
       "poster_path": "/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg",
       "release_date": "2024-03-27"
@@ -31,7 +43,10 @@
       "id": 746036,
       "title": "The Fall Guy",
       "overview": "Fresh off an almost career-ending accident, stuntman Colt Seavers has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.",
-      "genre_ids": [28, 35],
+      "genre_ids": [
+        28,
+        35
+      ],
       "popularity": 1553.204,
       "poster_path": "/tSz1qsmSJon0rqjHBxXZmrotuse.jpg",
       "release_date": "2024-04-24"
@@ -40,7 +55,11 @@
       "id": 786892,
       "title": "Furiosa: A Mad Max Saga",
       "overview": "As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.",
-      "genre_ids": [28, 12, 878],
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
       "popularity": 1166.998,
       "poster_path": "/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
       "release_date": "2024-05-22"
@@ -49,7 +68,10 @@
       "id": 614933,
       "title": "Atlas",
       "overview": "A brilliant counterterrorism analyst with a deep distrust of AI discovers it might be her only hope when a mission to capture a renegade robot goes awry.",
-      "genre_ids": [878, 28],
+      "genre_ids": [
+        878,
+        28
+      ],
       "popularity": 1607.759,
       "poster_path": "/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg",
       "release_date": "2024-05-23"
@@ -58,7 +80,12 @@
       "id": 882059,
       "title": "Boy Kills World",
       "overview": "When his family is murdered, a deaf-mute named Boy escapes to the jungle and is trained by a mysterious shaman to repress his childish imagination and become an instrument of death.",
-      "genre_ids": [28, 53, 80, 878],
+      "genre_ids": [
+        28,
+        53,
+        80,
+        878
+      ],
       "popularity": 1319.656,
       "poster_path": "/25JskXmchcYwj3jHRmcPm738MpB.jpg",
       "release_date": "2024-04-24"
@@ -67,7 +94,10 @@
       "id": 719221,
       "title": "Tarot",
       "overview": "When a group of friends recklessly violates the sacred rule of Tarot readings they unknowingly unleash an unspeakable evil trapped within the cursed cards. One by one, they come face to face with fate and end up in a race against death.",
-      "genre_ids": [27, 53],
+      "genre_ids": [
+        27,
+        53
+      ],
       "popularity": 1030.358,
       "poster_path": "/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg",
       "release_date": "2024-05-01"
@@ -76,7 +106,10 @@
       "id": 872585,
       "title": "Oppenheimer",
       "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
-      "genre_ids": [18, 36],
+      "genre_ids": [
+        18,
+        36
+      ],
       "popularity": 564.206,
       "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
       "release_date": "2023-07-19"
@@ -85,7 +118,12 @@
       "id": 748783,
       "title": "The Garfield Movie",
       "overview": "Garfield, the world-famous, Monday-hating, lasagna-loving indoor cat, is about to have a wild outdoor adventure! After an unexpected reunion with his long-lost father – scruffy street cat Vic – Garfield and his canine friend Odie are forced from their perfectly pampered life into joining Vic in a hilarious, high-stakes heist.",
-      "genre_ids": [16, 35, 10751, 12],
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        12
+      ],
       "popularity": 609.022,
       "poster_path": "/p6AbOJvMQhBmffd0PIv0u8ghWeY.jpg",
       "release_date": "2024-04-30"
@@ -94,7 +132,11 @@
       "id": 739547,
       "title": "Thelma the Unicorn",
       "overview": "Thelma dreams of being a glamorous unicorn. Then in a rare pink and glitter-filled moment of fate, Thelma's wish comes true. She rises to instant international stardom, but at an unexpected cost. After a while, Thelma realizes that she was happier as her ordinary, sparkle-free self. So she ditches her horn, scrubs off her sparkles, and returns home, where her best friend is waiting for her with a hug.",
-      "genre_ids": [16, 14, 10751],
+      "genre_ids": [
+        16,
+        14,
+        10751
+      ],
       "popularity": 455.374,
       "poster_path": "/yutiEZ7taGDNau2jGjKIdDwQpDw.jpg",
       "release_date": "2024-05-17"
@@ -103,7 +145,10 @@
       "id": 348,
       "title": "Alien",
       "overview": "During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.",
-      "genre_ids": [27, 878],
+      "genre_ids": [
+        27,
+        878
+      ],
       "popularity": 391.341,
       "poster_path": "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
       "release_date": "1979-05-25"
@@ -112,7 +157,10 @@
       "id": 937287,
       "title": "Challengers",
       "overview": "Tennis player turned coach Tashi has taken her husband, Art, and transformed him into a world-famous Grand Slam champion. To jolt him out of his recent losing streak, she signs him up for a \"Challenger\" event — close to the lowest level of pro tournament — where he finds himself standing across the net from his former best friend and Tashi's former boyfriend.",
-      "genre_ids": [10749, 18],
+      "genre_ids": [
+        10749,
+        18
+      ],
       "popularity": 452.586,
       "poster_path": "/H6vke7zGiuLsz4v4RPeReb9rsv.jpg",
       "release_date": "2024-04-18"
@@ -121,7 +169,11 @@
       "id": 1041613,
       "title": "Immaculate",
       "overview": "An American nun embarks on a new journey when she joins a remote convent in the Italian countryside. However, her warm welcome quickly turns into a living nightmare when she discovers her new home harbours a sinister secret and unspeakable horrors.",
-      "genre_ids": [27, 9648, 53],
+      "genre_ids": [
+        27,
+        9648,
+        53
+      ],
       "popularity": 488.775,
       "poster_path": "/fdZpvODTX5wwkD0ikZNaClE4AoW.jpg",
       "release_date": "2024-03-20"
@@ -130,7 +182,10 @@
       "id": 1087388,
       "title": "Sting",
       "overview": "After raising an unnervingly talented spider in secret, 12-year-old Charlotte must face the truth about her pet and fight for her family's survival.",
-      "genre_ids": [27, 53],
+      "genre_ids": [
+        27,
+        53
+      ],
       "popularity": 384.388,
       "poster_path": "/zuSAZIG1PSrxFwPeAlGtg9LTwxo.jpg",
       "release_date": "2024-04-12"
@@ -139,7 +194,10 @@
       "id": 1093995,
       "title": "Chief of Station",
       "overview": "After learning that the death of his wife was not an accident, a former CIA Station Chief is forced back into the espionage underworld, teaming up with an adversary to unravel a conspiracy that challenges everything he thought he knew.",
-      "genre_ids": [28, 53],
+      "genre_ids": [
+        28,
+        53
+      ],
       "popularity": 403.327,
       "poster_path": "/uuA01PTtPombRPvL9dvsBqOBJWm.jpg",
       "release_date": "2024-05-02"
@@ -148,7 +206,11 @@
       "id": 1096197,
       "title": "No Way Up",
       "overview": "Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.",
-      "genre_ids": [28, 27, 53],
+      "genre_ids": [
+        28,
+        27,
+        53
+      ],
       "popularity": 405.484,
       "poster_path": "/hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg",
       "release_date": "2024-01-18"
@@ -157,7 +219,10 @@
       "id": 1111873,
       "title": "Abigail",
       "overview": "A group of criminals kidnaps a teenage ballet dancer, the daughter of a notorious gang leader, in order to obtain a ransom of $50 million, but over time, they discover that she is not just an ordinary girl. After the kidnappers begin to diminish, one by one, they discover, to their increasing horror, that they are locked inside with an unusual girl.",
-      "genre_ids": [27, 53],
+      "genre_ids": [
+        27,
+        53
+      ],
       "popularity": 356.976,
       "poster_path": "/5gKKSoD3iezjoL7YqZONjmyAiRA.jpg",
       "release_date": "2024-04-18"
@@ -166,7 +231,10 @@
       "id": 812037,
       "title": "Last Summer",
       "overview": "One summer, a French teenager who has been living with his mother in the city moves in with his estranged father’s family in the countryside, where he clashes with his stepmother.",
-      "genre_ids": [18, 53],
+      "genre_ids": [
+        18,
+        53
+      ],
       "popularity": 377.026,
       "poster_path": "/8WwVhNc2dPtmPiwnm5MdKRHmeUQ.jpg",
       "release_date": "2023-09-13"
@@ -175,7 +243,11 @@
       "id": 843527,
       "title": "The Idea of You",
       "overview": "Solène, a 40-year-old single mom, begins an unexpected romance with 24-year-old Hayes Campbell, the lead singer of August Moon, the hottest boy band on the planet. When Solène must step in to chaperone her teenage daughter's trip to the Coachella Music Festival after her ex bails at the last minute, she has a chance encounter with Hayes and there is an instant, undeniable spark. As they begin a whirlwind romance, it isn't long before Hayes' superstar status poses unavoidable challenges to their relationship, and Solène soon discovers that life in the glare of his spotlight might be more than she bargained for.",
-      "genre_ids": [10749, 35, 18],
+      "genre_ids": [
+        10749,
+        35,
+        18
+      ],
       "popularity": 313.173,
       "poster_path": "/zDi2U7WYkdIoGYHcYbM9X5yReVD.jpg",
       "release_date": "2024-05-02"
@@ -184,7 +256,10 @@
       "id": 1284004,
       "title": "May the 12th Be with You",
       "overview": "It's Mother's Day and Marge Simpson joins the moms of Disney+ on a special holiday outing that turns into an epic galactic adventure filled with heroes, villains, and Stewie from Family Guy.",
-      "genre_ids": [16, 35],
+      "genre_ids": [
+        16,
+        35
+      ],
       "popularity": 323.681,
       "poster_path": "/sHJ2OIgpcpSmhqXkuSWxZ3nwg1S.jpg",
       "release_date": "2024-05-09"
@@ -193,7 +268,11 @@
       "id": 639720,
       "title": "IF",
       "overview": "A girl discovers she can see everyone's imaginary friends and embarks on a magical adventure to reconnect forgotten IFs with their kids.",
-      "genre_ids": [35, 14, 10751],
+      "genre_ids": [
+        35,
+        14,
+        10751
+      ],
       "popularity": 289.07,
       "poster_path": "/xbKFv4KF3sVYuWKllLlwWDmuZP7.jpg",
       "release_date": "2024-05-08"
@@ -202,7 +281,11 @@
       "id": 1105407,
       "title": "Damaged",
       "overview": "A Chicago detective travels to Scotland after an emerging serial killer’s crimes match those that he investigated five years earlier, one of which was the crime scene of his murdered girlfriend.",
-      "genre_ids": [28, 80, 53],
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
       "popularity": 275.823,
       "poster_path": "/eacWm6jPrjkpqhi4VzwqYeJWL6k.jpg",
       "release_date": "2024-04-12"
@@ -211,7 +294,10 @@
       "id": 618588,
       "title": "Arthur the King",
       "overview": "Over the course of ten days and 435 miles, an unbreakable bond is forged between pro adventure racer Michael Light and a scrappy street dog companion dubbed Arthur. As the team is pushed to their outer limits of endurance in the race, Arthur redefines what victory, loyalty and friendship truly mean.",
-      "genre_ids": [12, 18],
+      "genre_ids": [
+        12,
+        18
+      ],
       "popularity": 236.271,
       "poster_path": "/zkKB3kOun5DKAkm61pHvLbrjxfa.jpg",
       "release_date": "2024-03-15"
@@ -220,7 +306,12 @@
       "id": 1231574,
       "title": "My Oni Girl",
       "overview": "A shy teenage boy's inability to say no is tested when a headstrong girl drags him on a mystical journey amid summer snow to find her missing mom.",
-      "genre_ids": [16, 14, 12, 10751],
+      "genre_ids": [
+        16,
+        14,
+        12,
+        10751
+      ],
       "popularity": 198.782,
       "poster_path": "/k69kkwsipkPn7Nzq488kHGQTPo.jpg",
       "release_date": "2024-05-24"
@@ -229,7 +320,11 @@
       "id": 573435,
       "title": "Bad Boys: Ride or Die",
       "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
-      "genre_ids": [28, 53, 80],
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
       "popularity": 232.672,
       "poster_path": "/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg",
       "release_date": "2024-06-05"
@@ -238,7 +333,10 @@
       "id": 758679,
       "title": "Mothers' Instinct",
       "overview": "Alice and Celine are inseparable and share everything, from their daily routines to their secrets. Their perfect harmony is shattered when one of their sons dies in a tragic accident while under Alice’s care. Celine blames Alice for the death of her child and becomes obsessed with protecting her surviving son from any harm. Alice, on the other hand, feels guilty and paranoid that Celine is plotting to harm her and her family. A gripping battle of wills ensues as the two women spiral into madness and violence.",
-      "genre_ids": [18, 53],
+      "genre_ids": [
+        18,
+        53
+      ],
       "popularity": 188.962,
       "poster_path": "/xscMEP5VsvCLxFvrDQD84biWsLA.jpg",
       "release_date": "2024-01-11"
@@ -247,7 +345,11 @@
       "id": 838209,
       "title": "Exhuma",
       "overview": "After tracing the origin of a disturbing supernatural affliction to a wealthy family's ancestral gravesite, a team of paranormal experts relocates the remains—and soon discovers what happens to those who dare to mess with the wrong grave.",
-      "genre_ids": [9648, 27, 53],
+      "genre_ids": [
+        9648,
+        27,
+        53
+      ],
       "popularity": 199.69,
       "poster_path": "/pQYHouPsDw32FhDLr7E3jmw0WTk.jpg",
       "release_date": "2024-02-22"
@@ -256,7 +358,12 @@
       "id": 1062807,
       "title": "SPY x FAMILY CODE: White",
       "overview": "While under the guise of taking his family on a weekend winter getaway, Loid's attempt to make progress on his current mission Operation Strix proves difficult when Anya mistakenly gets involved and triggers events that threaten world peace.",
-      "genre_ids": [16, 35, 12, 28],
+      "genre_ids": [
+        16,
+        35,
+        12,
+        28
+      ],
       "popularity": 224.822,
       "poster_path": "/xlIQf4y9eB14iYzNN142tROIWON.jpg",
       "release_date": "2023-12-22"
@@ -265,7 +372,10 @@
       "id": 998846,
       "title": "Back to Black",
       "overview": "The extraordinary story of Amy Winehouse’s early rise to fame from her early days in Camden through the making of her groundbreaking album, Back to Black that catapulted Winehouse to global fame. Told through Amy’s eyes and inspired by her deeply personal lyrics, the film explores and embraces the many layers of the iconic artist and the tumultuous love story at the center of one of the most legendary albums of all time.",
-      "genre_ids": [10402, 18],
+      "genre_ids": [
+        10402,
+        18
+      ],
       "popularity": 177.668,
       "poster_path": "/xHQEeUT3Ac4fTY72UeNrI75xLtE.jpg",
       "release_date": "2024-04-11"
@@ -274,7 +384,11 @@
       "id": 969492,
       "title": "Land of Bad",
       "overview": "When a Delta Force special ops mission goes terribly wrong, Air Force drone pilot Reaper has 48 hours to remedy what has devolved into a wild rescue operation. With no weapons and no communication other than the drone above, the ground mission suddenly becomes a full-scale battle when the team is discovered by the enemy.",
-      "genre_ids": [28, 53, 10752],
+      "genre_ids": [
+        28,
+        53,
+        10752
+      ],
       "popularity": 185.675,
       "poster_path": "/h3jYanWMEJq6JJsCopy1h7cT2Hs.jpg",
       "release_date": "2024-01-25"
@@ -283,7 +397,10 @@
       "id": 850888,
       "title": "Sayen: The Huntress",
       "overview": "Realizing that she cannot take down Fisk alone, Sayen teams up with an underground resistance group with a plan to expose and end Fisk's unchecked plundering once and for all.",
-      "genre_ids": [28, 53],
+      "genre_ids": [
+        28,
+        53
+      ],
       "popularity": 214.855,
       "poster_path": "/upKD8UbH8vQ798aMWgwMxV8t4yk.jpg",
       "release_date": "2024-04-26"
@@ -291,7 +408,10 @@
     {
       "id": 1072790,
       "title": "Anyone But You",
-      "genre_ids": [10749, 35],
+      "genre_ids": [
+        10749,
+        35
+      ],
       "popularity": 191.179,
       "poster_path": "/yRt7MGBElkLQOYRvLTT1b3B1rcp.jpg",
       "release_date": "2023-12-21"
@@ -300,7 +420,11 @@
       "id": 948549,
       "title": "Love Lies Bleeding",
       "overview": "Reclusive gym manager Lou falls hard for Jackie, an ambitious bodybuilder headed through town to Las Vegas in pursuit of her dream. But their love ignites violence, pulling them deep into the web of Lou’s criminal family.",
-      "genre_ids": [80, 10749, 53],
+      "genre_ids": [
+        80,
+        10749,
+        53
+      ],
       "popularity": 172.737,
       "poster_path": "/p7jyFWiLyHPttqYBFAlLJwtYTYH.jpg",
       "release_date": "2024-03-08"
@@ -309,7 +433,11 @@
       "id": 720321,
       "title": "Breathe",
       "overview": "Air-supply is scarce in the near future, forcing a mother and daughter to fight for survival when two strangers arrive desperate for an oxygenated haven.",
-      "genre_ids": [878, 9648, 53],
+      "genre_ids": [
+        878,
+        9648,
+        53
+      ],
       "popularity": 193.042,
       "poster_path": "/wTW2t8ocWDlHns8I7vQxuqkyK58.jpg",
       "release_date": "2024-04-04"
@@ -318,7 +446,11 @@
       "id": 508883,
       "title": "The Boy and the Heron",
       "overview": "While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to the boy's mother. As he tries to adjust, this strange new world grows even stranger following the appearance of a persistent gray heron, who perplexes and bedevils Mahito, dubbing him the \"long-awaited one.\"",
-      "genre_ids": [16, 12, 14],
+      "genre_ids": [
+        16,
+        12,
+        14
+      ],
       "popularity": 136.046,
       "poster_path": "/y9xS5NQTBnFjDoXhSFQeGxlmkoM.jpg",
       "release_date": "2023-07-14"
@@ -327,7 +459,10 @@
       "id": 1093231,
       "title": "Mother of the Bride",
       "overview": "A doting mom jets off to a tropical island resort for her daughter's wedding — only to discover the groom's father is the ex she hasn't seen in decades.",
-      "genre_ids": [10749, 35],
+      "genre_ids": [
+        10749,
+        35
+      ],
       "popularity": 168.981,
       "poster_path": "/vdTvwykMWvVgdaViBVRh8IFTku5.jpg",
       "release_date": "2024-05-08"
@@ -336,7 +471,11 @@
       "id": 1108658,
       "title": "The Shift",
       "overview": "Following a tense encounter with a mysterious stranger with otherworldly powers, a man is banished to a parallel, tyrannical, liberal Earth, where he fights to get back the woman he loves.",
-      "genre_ids": [878, 14, 53],
+      "genre_ids": [
+        878,
+        14,
+        53
+      ],
       "popularity": 148.026,
       "poster_path": "/voLxg0emuu862JAgFwM4yTH3eGj.jpg",
       "release_date": "2023-11-30"
@@ -345,7 +484,9 @@
       "id": 938614,
       "title": "Late Night with the Devil",
       "overview": "A live broadcast of a late-night talk show in 1977 goes horribly wrong, unleashing evil into the nation's living rooms.",
-      "genre_ids": [27],
+      "genre_ids": [
+        27
+      ],
       "popularity": 138.746,
       "poster_path": "/u3YQJctMzFN2wAvnkmXy41bXhFv.jpg",
       "release_date": "2024-03-19"
@@ -354,7 +495,11 @@
       "id": 1290938,
       "title": "South Park: The End of Obesity",
       "overview": "The advent of new weight loss drugs has a huge impact on everyone in South Park. When Cartman is denied access to the life-changing medicine, the kids jump into action.",
-      "genre_ids": [16, 35, 10770],
+      "genre_ids": [
+        16,
+        35,
+        10770
+      ],
       "popularity": 217.83,
       "poster_path": "/zxM1AIKBP83plf2buLR0cbGfvl2.jpg",
       "release_date": "2024-05-24"
@@ -363,7 +508,11 @@
       "id": 863,
       "title": "Toy Story 2",
       "overview": "Andy heads off to Cowboy Camp, leaving his toys to their own devices. Things shift into high gear when an obsessive toy collector named Al McWhiggen, owner of Al's Toy Barn kidnaps Woody. Andy's toys mount a daring rescue mission, Buzz Lightyear meets his match and Woody has to decide where he and his heart truly belong.",
-      "genre_ids": [16, 35, 10751],
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
       "popularity": 113.126,
       "poster_path": "/2MFIhZAW0CVlEQrFyqwa4U6zqJP.jpg",
       "release_date": "1999-10-30"
@@ -372,7 +521,10 @@
       "id": 1107387,
       "title": "Hachiko",
       "overview": "This is the story of a puppy that touched hundreds of millions of people around the world. Hachiko is a cute Chinese pastoral dog. He met his destined owner Chen Jingxiu in the vast crowd and became a member of the Chen family. With the passage of time, the once beautiful home is no longer there, but Batong is still waiting where it is, and its fate is closely tied to its family.",
-      "genre_ids": [18, 10751],
+      "genre_ids": [
+        18,
+        10751
+      ],
       "popularity": 215.081,
       "poster_path": "/ssWZpXHtILfKZhEORFG5C0giWLd.jpg",
       "release_date": "2023-03-31"
@@ -381,7 +533,10 @@
       "id": 832262,
       "title": "The Dry 2 - Force of Nature",
       "overview": "When five women take part in a corporate hiking retreat and only four come out on the other side, Federal Agents Aaron Falk and Carmen Cooper head deep into the Victorian mountain ranges to investigate in the hopes of finding their whistle-blowing informant, Alice Russell, alive.",
-      "genre_ids": [9648, 53],
+      "genre_ids": [
+        9648,
+        53
+      ],
       "popularity": 131.749,
       "poster_path": "/sw4M0jLT04FM1p3C2XQ3il50wgV.jpg",
       "release_date": "2024-02-08"
@@ -390,7 +545,10 @@
       "id": 598,
       "title": "City of God",
       "overview": "In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.",
-      "genre_ids": [18, 80],
+      "genre_ids": [
+        18,
+        80
+      ],
       "popularity": 137.258,
       "poster_path": "/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
       "release_date": "2002-08-30"
@@ -399,7 +557,11 @@
       "id": 4935,
       "title": "Howl's Moving Castle",
       "overview": "Sophie, a young milliner, is turned into an elderly woman by a witch who enters her shop and curses her. She encounters a wizard named Howl and gets caught up in his resistance to fighting for the king.",
-      "genre_ids": [14, 16, 12],
+      "genre_ids": [
+        14,
+        16,
+        12
+      ],
       "popularity": 98.445,
       "poster_path": "/6pZgH10jhpToPcf0uvyTCPFhWpI.jpg",
       "release_date": "2004-09-09"
@@ -408,7 +570,10 @@
       "id": 467244,
       "title": "The Zone of Interest",
       "overview": "The commandant of Auschwitz, Rudolf Höss, and his wife Hedwig, strive to build a dream life for their family in a house and garden next to the camp.",
-      "genre_ids": [36, 18],
+      "genre_ids": [
+        36,
+        18
+      ],
       "popularity": 104.391,
       "poster_path": "/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg",
       "release_date": "2023-12-15"
@@ -417,7 +582,9 @@
       "id": 1063549,
       "title": "Gaga Chromatica Ball",
       "overview": "In front of a sold-out crowd of 52,000 people, Lady Gaga delivers a career-defining performance at Los Angeles's Dodger Stadium during her 2022 Chromatica Ball Tour.",
-      "genre_ids": [10402],
+      "genre_ids": [
+        10402
+      ],
       "popularity": 135.256,
       "poster_path": "/8uWhPiEcMDI8XelSmfTobTmPyA1.jpg",
       "release_date": "2024-05-23"
@@ -426,7 +593,10 @@
       "id": 278,
       "title": "The Shawshank Redemption",
       "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
-      "genre_ids": [18, 80],
+      "genre_ids": [
+        18,
+        80
+      ],
       "popularity": 119.111,
       "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
       "release_date": "1994-09-23"
@@ -435,7 +605,9 @@
       "id": 1063879,
       "title": "Infested",
       "overview": "Residents of a rundown French apartment building battle against an army of deadly, rapidly reproducing spiders.",
-      "genre_ids": [27],
+      "genre_ids": [
+        27
+      ],
       "popularity": 114.191,
       "poster_path": "/dY98PkUAbIGUUg0FhXEcOkbzHIZ.jpg",
       "release_date": "2023-12-27"
@@ -444,7 +616,11 @@
       "id": 799583,
       "title": "The Ministry of Ungentlemanly Warfare",
       "overview": "Taking place during World War II, the British Army assigns a group of competent soldiers to carry out a mission against the Nazi forces behind enemy lines... A true story about a secret British World War II organization; the Special Operations Executive. Founded by Winston Churchill, their irregular warfare against the Germans helped to change the course of the war, and gave birth to modern black operations.",
-      "genre_ids": [28, 10752, 18],
+      "genre_ids": [
+        28,
+        10752,
+        18
+      ],
       "popularity": 110.431,
       "poster_path": "/8aF0iAKH9MJMYAZdi0Slg77RYa2.jpg",
       "release_date": "2024-04-18"
@@ -453,7 +629,11 @@
       "id": 1061990,
       "title": "City Hunter",
       "overview": "An exceptional marksman and hopeless playboy, private eye Ryo Saeba reluctantly forms an alliance with his late partner's sister to investigate his death.",
-      "genre_ids": [28, 18, 35],
+      "genre_ids": [
+        28,
+        18,
+        35
+      ],
       "popularity": 118.237,
       "poster_path": "/cjQzJ9xFdaN9KAwu7HUImIgbc2Y.jpg",
       "release_date": "2024-04-24"
@@ -462,7 +642,10 @@
       "id": 560016,
       "title": "Monkey Man",
       "overview": "Kid is an anonymous young man who ekes out a meager living in an underground fight club where, night after night, wearing a gorilla mask, he is beaten bloody by more popular fighters for cash. After years of suppressed rage, Kid discovers a way to infiltrate the enclave of the city’s sinister elite. As his childhood trauma boils over, his mysteriously scarred hands unleash an explosive campaign of retribution to settle the score with the men who took everything from him.",
-      "genre_ids": [28, 53],
+      "genre_ids": [
+        28,
+        53
+      ],
       "popularity": 106.275,
       "poster_path": "/4lhR4L2vzzjl68P1zJyCH755Oz4.jpg",
       "release_date": "2024-04-03"
@@ -471,7 +654,9 @@
       "id": 1214474,
       "title": "Stress Positions",
       "overview": "Terry Goon is keeping strict quarantine in his ex-husband’s Brooklyn brownstone while caring for his nephew — a 19-year-old model from Morocco named Bahlul — bedridden in a full leg cast after an electric scooter accident. Unfortunately for Terry, everyone in his life wants to meet the model.",
-      "genre_ids": [35],
+      "genre_ids": [
+        35
+      ],
       "popularity": 120.083,
       "poster_path": "/dsVWPrHJvXEt1XPxAEqLiSq0eyy.jpg",
       "release_date": "2024-04-19"
@@ -480,7 +665,10 @@
       "id": 823482,
       "title": "Dream Scenario",
       "overview": "Hapless family man Paul Matthews finds his life turned upside down when millions of strangers suddenly start seeing him in their dreams. But when his nighttime appearances take a nightmarish turn, Paul is forced to navigate his newfound stardom.",
-      "genre_ids": [35, 14],
+      "genre_ids": [
+        35,
+        14
+      ],
       "popularity": 84.76,
       "poster_path": "/eMaAi8wTI5wON8pp33w3BDuGyZ8.jpg",
       "release_date": "2023-11-10"
@@ -489,7 +677,10 @@
       "id": 937746,
       "title": "Io Capitano",
       "overview": "Longing for a brighter future, two Senegalese teenagers embark on a journey from West Africa to Italy. However, between their dreams and reality lies a labyrinth of checkpoints, the Sahara Desert, and the vast waters of the Mediterranean.",
-      "genre_ids": [12, 18],
+      "genre_ids": [
+        12,
+        18
+      ],
       "popularity": 92.558,
       "poster_path": "/arh0pfq8PfyLfob4ymMz8kzrVFR.jpg",
       "release_date": "2023-09-07"
@@ -498,7 +689,11 @@
       "id": 564,
       "title": "The Mummy",
       "overview": "Dashing legionnaire Rick O'Connell stumbles upon the hidden ruins of Hamunaptra while in the midst of a battle to claim the area in 1920s Egypt. It has been over three thousand years since former High Priest Imhotep suffered a fate worse than death as a punishment for a forbidden love—along with a curse that guarantees eternal doom upon the world if he is ever awoken.",
-      "genre_ids": [12, 28, 14],
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
       "popularity": 68.81,
       "poster_path": "/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
       "release_date": "1999-04-16"
@@ -507,7 +702,11 @@
       "id": 1131751,
       "title": "Thabo and the Rhino Case",
       "overview": "Eleven year old Thabo aspires to be a private detective, if only his home, the small African village, was not the most peaceful Savannah paradise. But things take a sudden turn when a rhino is murdered in the safari park because of its horn.",
-      "genre_ids": [10751, 9648, 12],
+      "genre_ids": [
+        10751,
+        9648,
+        12
+      ],
       "popularity": 108.386,
       "poster_path": "/e8cE3haFcFN2pFMOFdB4EnZQQqk.jpg",
       "release_date": "2023-11-09"
@@ -516,7 +715,11 @@
       "id": 129,
       "title": "Spirited Away",
       "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
-      "genre_ids": [16, 10751, 14],
+      "genre_ids": [
+        16,
+        10751,
+        14
+      ],
       "popularity": 84.453,
       "poster_path": "/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
       "release_date": "2001-07-20"
@@ -525,7 +728,10 @@
       "id": 1257750,
       "title": "Honeymoonish",
       "overview": "Two newlyweds on their honeymoon discover that they are different in almost every way — but can these opposites attract?",
-      "genre_ids": [10749, 35],
+      "genre_ids": [
+        10749,
+        35
+      ],
       "popularity": 99.678,
       "poster_path": "/sXxs6FSFAYdrhKGD9f4fgCGmzXu.jpg",
       "release_date": "2024-04-29"
@@ -534,11 +740,33 @@
       "id": 839369,
       "title": "May December",
       "overview": "Twenty years after their notorious tabloid romance gripped the nation, a married couple buckles under the pressure when an actress arrives to do research for a film about their past.",
-      "genre_ids": [18, 35],
+      "genre_ids": [
+        18,
+        35
+      ],
       "popularity": 72.713,
       "poster_path": "/zhV7B610l7hjlri4ywikJ18ONuq.jpg",
       "release_date": "2023-11-16"
     }
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "movieId": "786892",
+      "review": "재밌어요!",
+      "like": 0,
+      "score": 5,
+      "createAt": "2024-06-03",
+      "writeId": "85.63286671637526",
+      "id": 1
+    },
+    {
+      "movieId": "786892",
+      "review": "재미없어요",
+      "like": 0,
+      "score": 1,
+      "createAt": "2024-06-03",
+      "writeId": "85.63286671637526",
+      "id": 2
+    }
+  ]
 }
