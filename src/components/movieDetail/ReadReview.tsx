@@ -140,7 +140,7 @@ const ReadReviewList = styled.li`
 const Profile = styled.figure`
   display: flex;
   align-items: flex-start;
-  margin-right: 20px;
+  width: 10%;
 
   svg {
     width: 50px;
@@ -153,7 +153,8 @@ const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 90%;
+  width: 85%;
+  position: relative;
 
   svg {
     width: 20px;

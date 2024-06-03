@@ -53,6 +53,7 @@ const Wrapper = styled.section`
   height: 100%;
   border: 0.5px solid white;
   border-radius: 15px;
+  overflow: auto;
 `;
 
 const Ul = styled.ul`
@@ -112,7 +113,7 @@ const Img = styled.img`
 
 const Description = styled.div`
   display: flex;
-
+  justify-content: space-evenly;
   width: 100%;
 `;
 
@@ -120,7 +121,7 @@ const DescriptionParagraph = styled.p`
   box-sizing: border-box;
   overflow: hidden;
 
-  width: 33%;
+  width: 15rem;
   height: inherit;
 
   color: white;

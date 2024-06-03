@@ -43,8 +43,8 @@ const Img = styled.img`
   margin-right: 20px;
   border-radius: 10px;
 
-  min-width: 300px;
-  height: 300px;
+  min-width: 250px;
+  height: 250px;
 
   background-color: grey;
 `;
@@ -58,9 +58,9 @@ const Description = styled.div`
 `;
 
 const DescriptionParagraph = styled.p`
-  margin: 15px;
+  margin: 12px;
   color: white;
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 
   &:last-child {

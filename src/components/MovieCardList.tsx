@@ -46,17 +46,19 @@ export default MovieCardList;
 const GridContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 10rem);
   gap: 10px;
 
-  height: 100%;
   width: 100%;
+  height: 100%;
+  overflow: auto;
 `;
 
 const GridItemLink = styled(Link)`
   display: flex;
   padding: 10px;
   opacity: 0.8;
+  height: 50%;
 
   &:hover {
     opacity: 1;
@@ -67,8 +69,8 @@ const Img = styled.img`
   margin-right: 20px;
   border-radius: 10px;
 
-  min-width: 200px;
-  height: 180px;
+  min-width: 6rem;
+  min-height: 6rem;
 
   background-color: grey;
 `;
@@ -78,14 +80,15 @@ const Description = styled.div`
   flex-direction: column;
 
   width: 100%;
-  padding: 1rem;
+  height: 70%;
 `;
 
 const DescriptionParagraph = styled.p`
-  margin: 10px 10px;
+  margin: 5px;
+  padding: 3px 0px;
 
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
 `;
 

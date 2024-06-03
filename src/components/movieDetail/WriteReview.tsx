@@ -91,17 +91,17 @@ const Wrapper = styled.div`
 const Label = styled.label`
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
+  white-space: nowrap;
 `;
 
 const Writer = styled.div`
-  min-width: 7%;
+  min-width: 10%;
   white-space: nowrap;
 `;
 
 const Input = styled.input`
-  width: 70%;
-  margin-left: 15px;
+  width: 50rem;
   background-color: inherit;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -112,23 +112,6 @@ const Input = styled.input`
 
   &:focus {
     border-bottom: 2px solid rgba(255, 255, 255, 1);
-  }
-`;
-
-const Button = styled.button`
-  background-color: inherit;
-  border-radius: 15px;
-  color: white;
-  opacity: 0.6;
-  padding: 10px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  margin-left: 10px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 1;
-    color: black;
-    background-color: white;
   }
 `;
 
@@ -147,4 +130,23 @@ const Select = styled.select`
 const Option = styled.option`
   background: grey;
   color: grey;
+`;
+
+const Button = styled.button`
+  margin-left: 10px;
+  padding: 10px;
+
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 15px;
+
+  background-color: inherit;
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    color: black;
+    background-color: white;
+  }
 `;

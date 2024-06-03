@@ -59,7 +59,7 @@ export default ReviewUpdateOrDelete;
 const Wrapper = styled.div`
   position: absolute;
   display: flex;
-  right: 10rem;
+  right: 0;
 `;
 
 const ElipsisButton = styled.button`

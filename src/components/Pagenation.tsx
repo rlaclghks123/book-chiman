@@ -78,7 +78,6 @@ export default Pagenation;
 
 const Wrapper = styled.div`
   width: 100%;
-  margin-top: 2rem;
   height: 2rem;
 `;
 

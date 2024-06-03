@@ -74,11 +74,10 @@ const Wrapper = styled.div`
 const Input = styled.input`
   outline: none;
 
-  width: 70%;
+  width: 50rem;
 
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  margin-left: 15px;
   padding-bottom: 5px;
 
   background-color: inherit;
@@ -100,6 +99,7 @@ const Button = styled.button`
   color: white;
   opacity: 0.6;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     opacity: 1;
@@ -112,6 +112,7 @@ const Label = styled.label`
   display: flex;
   align-items: center;
   font-size: 20px;
+  white-space: nowrap;
 `;
 
 const Select = styled.select`
