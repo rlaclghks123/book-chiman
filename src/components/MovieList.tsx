@@ -22,13 +22,22 @@ function MovieList({ data, isLoading }: Props) {
           <LinkBox key={data.id} to={String(data.id)}>
             <Li>
               <ListOrder>{idx + 1}</ListOrder>
-              <Img src={`${IMG_BASE_URL}/${data.poster_path}`} alt="movie Poster" />
+              <Img
+                src={
+                  data.poster_path
+                    ? `${IMG_BASE_URL}/${data.poster_path}`
+                    : 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                }
+                alt="movie Poster"
+              />
               <Description>
-                <DescriptionParagraph>{`제목 : ${data.title}`}</DescriptionParagraph>
-                <DescriptionParagraph>{`개봉일 : ${data.release_date}`}</DescriptionParagraph>
-                <DescriptionParagraph>{`장르 : ${toStringGenresWithComma(
-                  data.genre_ids
-                )}`}</DescriptionParagraph>
+                <DescriptionParagraph>{`제목 : ${data.title || '제목없음'}`}</DescriptionParagraph>
+                <DescriptionParagraph>{`개봉일 : ${
+                  data.release_date || '없음'
+                }`}</DescriptionParagraph>
+                <DescriptionParagraph>{`장르 : ${
+                  toStringGenresWithComma(data.genre_ids) || '없음'
+                }`}</DescriptionParagraph>
               </Description>
             </Li>
           </LinkBox>
