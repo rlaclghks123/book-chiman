@@ -87,8 +87,8 @@ function ReadReview() {
               <WriterAndTimeStamp>
                 <p>{`익명 ${idx + 1}`}</p>
                 <p>
-                  {Array.from({ length: reviews.score }, () => (
-                    <span>⭐️</span>
+                  {Array.from({ length: reviews.score }, (_, idx) => (
+                    <span key={idx}>⭐️</span>
                   ))}
                 </p>
                 <p>{reviews.createAt}</p>
@@ -156,6 +156,7 @@ const Description = styled.div`
   gap: 15px;
   width: 85%;
   position: relative;
+  margin-left: 15px;
 
   svg {
     width: 20px;

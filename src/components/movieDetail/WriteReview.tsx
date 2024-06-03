@@ -98,7 +98,6 @@ const Label = styled.label`
 const Writer = styled.div`
   width: 10%;
   white-space: nowrap;
-  margin-right: 15px;
 `;
 
 const Input = styled.input`
@@ -107,6 +106,7 @@ const Input = styled.input`
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 5px;
+  margin-left: 35px;
 
   width: 50rem;
   color: white;
