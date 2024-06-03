@@ -141,6 +141,7 @@ const Profile = styled.figure`
   display: flex;
   align-items: flex-start;
   width: 10%;
+  margin-right: 15px;
 
   svg {
     width: 50px;

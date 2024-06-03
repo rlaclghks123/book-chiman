@@ -96,18 +96,21 @@ const Label = styled.label`
 `;
 
 const Writer = styled.div`
-  min-width: 10%;
+  width: 10%;
   white-space: nowrap;
+  margin-right: 15px;
 `;
 
 const Input = styled.input`
-  width: 50rem;
-  background-color: inherit;
+  outline: none;
+
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  outline: none;
-  color: white;
   padding-bottom: 5px;
+
+  width: 50rem;
+  color: white;
+  background-color: inherit;
   font-size: 18px;
 
   &:focus {
