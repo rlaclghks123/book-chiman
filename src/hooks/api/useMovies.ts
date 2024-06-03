@@ -4,14 +4,14 @@ import { moviesFetcher } from '../../api/moviesFetcher';
 interface Props {
   keyword: string;
   curPage: number;
+  searchFilter: number;
   searchSort: string;
 }
 
-export const useMovies = ({ keyword, searchSort, curPage }: Props) => {
-  console.log(keyword);
+export const useMovies = ({ keyword, searchSort, searchFilter, curPage }: Props) => {
   const { data, isLoading, isError } = useQuery({
-    queryKey: ['movies', keyword, searchSort, curPage],
-    queryFn: () => moviesFetcher({ keyword, searchSort, curPage }),
+    queryKey: ['movies', keyword, searchSort, curPage, searchFilter],
+    queryFn: () => moviesFetcher({ keyword, searchSort, curPage, searchFilter }),
   });
   return {
     data: data?.data,

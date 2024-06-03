@@ -13,9 +13,9 @@ function SearchSortSelect() {
 
   return (
     <Wrapper onChange={handleChangeSortSelect}>
-      <option value="release_date">최신순</option>
-      <option value="title">이름순</option>
-      <option value="popularity">인기순</option>
+      <Option value="release_date">최신순</Option>
+      <Option value="title">이름순</Option>
+      <Option value="popularity">인기순</Option>
     </Wrapper>
   );
 }
@@ -24,6 +24,14 @@ export default SearchSortSelect;
 
 const Wrapper = styled.select`
   height: 70%;
-  background-color: white;
-  border: none;
+
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  margin: 0px 10px;
+`;
+
+const Option = styled.option`
+  background: grey;
+  color: grey;
 `;

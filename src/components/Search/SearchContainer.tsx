@@ -3,13 +3,17 @@ import styled from 'styled-components';
 import SelectViewRadio from './SelectViewRadio';
 import SearchBar from './SearchBar';
 import SearchSortSelect from './SearchSortSelect';
+import SearchFilterSelect from './SearchFilterSelect';
 
 function SearchContainer() {
   return (
     <Wrapper>
       <SelectViewRadio />
       <SearchBar />
-      <SearchSortSelect />
+      <SelectBox>
+        <SearchFilterSelect />
+        <SearchSortSelect />
+      </SelectBox>
     </Wrapper>
   );
 }
@@ -23,4 +27,10 @@ const Wrapper = styled.section`
 
   width: 100%;
   height: 3rem;
+`;
+
+const SelectBox = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
 `;

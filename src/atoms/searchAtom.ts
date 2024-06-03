@@ -10,6 +10,11 @@ export const searchKeywordState = atom({
   default: '',
 });
 
+export const searchFilterTypeState = atom({
+  key: 'searchFilterTypeState',
+  default: 0,
+});
+
 export const searchSortTypeState = atom({
   key: 'searchSortTypeState',
   default: 'release_date',
