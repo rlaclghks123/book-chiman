@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { moviesFetcher } from '../../api/moviesFetcher';
 
 interface Props {
@@ -12,7 +12,9 @@ export const useMovies = ({ keyword, searchSort, searchFilter, curPage }: Props)
   const { data, isLoading, isError } = useQuery({
     queryKey: ['movies', keyword, searchSort, curPage, searchFilter],
     queryFn: () => moviesFetcher({ keyword, searchSort, curPage, searchFilter }),
+    placeholderData: keepPreviousData,
   });
+
   return {
     data: data?.data,
     totalCount: data?.totalCount,

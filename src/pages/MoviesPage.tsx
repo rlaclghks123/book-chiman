@@ -48,7 +48,9 @@ function MoviesPage() {
         {curViewType === 'card-view' && <MovieCardList data={movieDatas} isLoading={isLoading} />}
         {curViewType === 'list-view' && <MovieList data={movieDatas} isLoading={isLoading} />}
       </ViewContainer>
-      <Pagenation totalCount={totalCount} curPage={curPage} setCurPage={setCurPage} />
+      {totalCount && (
+        <Pagenation totalCount={totalCount} curPage={curPage} setCurPage={setCurPage} />
+      )}
     </Wrapper>
   );
 }
