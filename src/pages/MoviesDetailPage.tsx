@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Deffered from '../components/Deffered';
 import MovieIntroduce from '../components/movieDetail/MovieIntroduce';
 import WriteReview from '../components/movieDetail/WriteReview';
+import ReadReview from '../components/movieDetail/ReadReview';
 
 import { useMovieDetail } from '../hooks/api/useMovieDetail';
 import { Movie } from '../types/movies';
@@ -28,6 +29,7 @@ function MoviesDetailPage() {
 
       <ReviewContainer>
         <WriteReview />
+        <ReadReview />
       </ReviewContainer>
     </Wrapper>
   );

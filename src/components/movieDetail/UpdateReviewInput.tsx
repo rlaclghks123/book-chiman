@@ -1,0 +1,87 @@
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { ChangeEvent, useState } from 'react';
+import styled from 'styled-components';
+
+import { updateReviewFetcher } from '../../api/updateReviewFetcher';
+import { UpdateReview } from '../../types/reviews';
+
+interface Props {
+  review: string;
+  id: number;
+  setClickedUpdateId: React.Dispatch<React.SetStateAction<number>>;
+}
+
+function UpdateReviewInput({ review, id, setClickedUpdateId }: Props) {
+  const [curReview, setCurReview] = useState(review);
+
+  const queryClient = useQueryClient();
+
+  const { mutate: updateReviewMutate } = useMutation({
+    mutationFn: (payload: UpdateReview) => updateReviewFetcher(payload),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['reviews'] }),
+    onError: () => alert('실패했습니다!'),
+  });
+
+  const handleClick = (id: number) => {
+    const payload = {
+      id,
+      curReview,
+    };
+    updateReviewMutate(payload);
+    setClickedUpdateId(0);
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setCurReview(e.target.value);
+  };
+
+  return (
+    <Wrapper>
+      <Input value={curReview} onChange={handleChange} />
+      <Button type="button" onClick={() => handleClick(id)}>
+        수정
+      </Button>
+    </Wrapper>
+  );
+}
+
+export default UpdateReviewInput;
+
+const Wrapper = styled.div``;
+
+const Input = styled.input`
+  outline: none;
+
+  width: 80%;
+
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: 15px;
+  padding-bottom: 5px;
+
+  background-color: inherit;
+  color: white;
+  font-size: 18px;
+
+  &:focus {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+`;
+
+const Button = styled.button`
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 1);
+
+  background-color: inherit;
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    color: black;
+    background-color: white;
+  }
+`;
