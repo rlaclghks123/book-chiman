@@ -72,7 +72,7 @@ const Wrapper = styled.div`
 const ViewContainer = styled.div`
   width: 100%;
   height: 70%;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   box-sizing: border-box;
 `;
