@@ -1,9 +1,11 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 import { updateReviewFetcher } from '../../api/updateReviewFetcher';
 import { UpdateReview } from '../../types/reviews';
+import { SCORE_SELECT_DATA } from './WriteReview';
+import Select from '../common/Select';
 
 interface Props {
   review: string;
@@ -39,24 +41,12 @@ function UpdateReviewInput({ review, id, setClickedUpdateId }: Props) {
     setClickedUpdateId(0);
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setCurReview(e.target.value);
-  };
-
-  const handleScrore = (e: ChangeEvent<HTMLSelectElement>) => {
-    setScore(Number(e.target.value));
-  };
-
   return (
     <Wrapper>
-      <Input value={curReview} onChange={handleChange} />
+      <Input value={curReview} onChange={(e) => setCurReview(e.target.value)} />
       <Label>
         <p>평점 ⭐️ : </p>
-        <Select onChange={handleScrore}>
-          {Array.from({ length: 5 }, (_, i) => (
-            <Option key={i} value={5 - i}>{`${5 - i}점`}</Option>
-          ))}
-        </Select>
+        <Select setter={setScore} options={SCORE_SELECT_DATA} />
       </Label>
       <Button type="button" onClick={() => handleClick(id)}>
         수정
@@ -113,21 +103,4 @@ const Label = styled.label`
   align-items: center;
   font-size: 20px;
   white-space: nowrap;
-`;
-
-const Select = styled.select`
-  width: 4rem;
-  height: 2rem;
-
-  margin: 0px 5px;
-  border-radius: 5px;
-
-  background-color: black;
-  color: white;
-  font-size: 16px;
-`;
-
-const Option = styled.option`
-  background: grey;
-  color: grey;
 `;

@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 import { useSetRecoilState } from 'recoil';
 import styled from 'styled-components';
 
@@ -14,10 +14,6 @@ function SearchBar() {
     setKeyword(curKeyword);
   };
 
-  const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setCurKeyword(e.target.value);
-  };
-
   const handleRefresh = () => {
     setKeyword('');
     setCurKeyword('');
@@ -28,10 +24,11 @@ function SearchBar() {
       <Form onSubmit={handleSubmit}>
         <SearchBarInput
           placeholder="영화 제목을 입력해주세요"
-          onChange={handleSearchChange}
+          onChange={(e) => setCurKeyword(e.target.value)}
           value={curKeyword}
         />
       </Form>
+
       <Button onClick={handleRefresh}>
         <RefreshSvg />
       </Button>

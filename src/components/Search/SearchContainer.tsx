@@ -9,7 +9,9 @@ function SearchContainer() {
   return (
     <Wrapper>
       <SelectViewRadio />
+
       <SearchBar />
+
       <SelectBox>
         <SearchFilterSelect />
         <SearchSortSelect />

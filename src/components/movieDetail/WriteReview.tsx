@@ -1,24 +1,24 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 
 import { saveReviewFetcher } from '../../api/saveReviewFetcher';
 import { Review } from '../../types/reviews';
+import Select from '../common/Select';
+
+export const SCORE_SELECT_DATA = Array.from({ length: 5 }, (_, i) => {
+  return {
+    value: 5 - i,
+    name: `${5 - i}점`,
+  };
+});
 
 function WriteReview() {
   const { id } = useParams();
   const [review, setReview] = useState('');
   const [score, setScore] = useState(5);
   const queryClient = useQueryClient();
-
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setReview(e.target.value);
-  };
-
-  const handleScrore = (e: ChangeEvent<HTMLSelectElement>) => {
-    setScore(Number(e.target.value));
-  };
 
   const { mutate: reviewMutate } = useMutation({
     mutationFn: (payload: Omit<Review, 'id'>) => saveReviewFetcher(payload),
@@ -62,18 +62,16 @@ function WriteReview() {
         <Input
           id="writer"
           placeholder="댓글 추가..."
-          onChange={handleInputChange}
+          onChange={(e) => setReview(e.target.value)}
           value={review}
           autoComplete={'off'}
         />
+
         <Label>
           <p>평점 ⭐️ : </p>
-          <Select onChange={handleScrore}>
-            {Array.from({ length: 5 }, (_, i) => (
-              <Option key={i} value={5 - i}>{`${5 - i}점`}</Option>
-            ))}
-          </Select>
+          <Select setter={setScore} options={SCORE_SELECT_DATA} />
         </Label>
+
         <Button type="button" onClick={handleClick}>
           댓글
         </Button>
@@ -116,23 +114,6 @@ const Input = styled.input`
   &:focus {
     border-bottom: 2px solid rgba(255, 255, 255, 1);
   }
-`;
-
-const Select = styled.select`
-  width: 4rem;
-  height: 2rem;
-
-  margin: 0px 5px;
-  border-radius: 5px;
-
-  background-color: black;
-  color: white;
-  font-size: 16px;
-`;
-
-const Option = styled.option`
-  background: grey;
-  color: grey;
 `;
 
 const Button = styled.button`
