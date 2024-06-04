@@ -6,6 +6,8 @@ import { useMovies } from '../hooks/api/useMovies';
 
 import MovieCardList from '../components/MovieCardList';
 import SearchContainer from '../components/Search/SearchContainer';
+import Pagenation from '../components/Pagenation';
+import MovieList from '../components/MovieList';
 
 import {
   searchFilterTypeState,
@@ -13,9 +15,7 @@ import {
   searchSortTypeState,
   viewTypeState,
 } from '../atoms/searchAtom';
-import Pagenation from '../components/Pagenation';
 import { Movie } from '../types/movies';
-import MovieList from '../components/MovieList';
 
 interface Movies {
   data: Movie[];
