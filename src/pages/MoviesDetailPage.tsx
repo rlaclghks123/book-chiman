@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Deffered from '../components/Deffered';
 import MovieIntroduce from '../components/movieDetail/MovieIntroduce';
 import WriteReview from '../components/movieDetail/WriteReview';
 import ReadReview from '../components/movieDetail/ReadReview';
 
 import { useMovieDetail } from '../hooks/api/useMovieDetail';
 import { Movie } from '../types/movies';
+import Loading from '../components/common/Loading';
 
 export interface MovieDetail {
   data: Movie;
@@ -21,7 +21,7 @@ function MoviesDetailPage() {
   const { data: movieDetail, isLoading, isError }: MovieDetail = useMovieDetail({ id });
 
   if (isError) return <div>영화를 찾을 수 없습니다. </div>;
-  if (isLoading) return <Deffered>로딩중..</Deffered>;
+  if (isLoading) return <Loading />;
 
   return (
     <Wrapper>

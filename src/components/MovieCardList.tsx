@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { IMG_BASE_URL } from '../constants/movie';
-import Deffered from './Deffered';
 import { Movie } from '../types/movies';
 import { toStringGenresWithComma } from '../utils/toStringGenresWithComma';
+import Loading from './common/Loading';
 
 interface Props {
   data: Movie[];
@@ -14,7 +14,7 @@ interface Props {
 function MovieCardList({ data, isLoading }: Props) {
   return (
     <GridContainer>
-      {isLoading && <Deffered>로딩중...</Deffered>}
+      {isLoading && <Loading />}
 
       {!isLoading && !data?.length && <NotFoundData>정보가 없습니다.</NotFoundData>}
 
@@ -93,7 +93,7 @@ const DescriptionParagraph = styled.p`
 `;
 
 const NotFoundData = styled.div`
-  width: 85vw;
+  width: 80vw;
   margin-top: 50px;
 
   text-align: center;

@@ -13,10 +13,6 @@ interface Props {
 function ReviewUpdateOrDelete({ id, setClickedUpdateId }: Props) {
   const [clicked, setClicked] = useState(false);
 
-  const handleClick = () => {
-    setClicked((prev) => !prev);
-  };
-
   const handleUpdate = () => {
     setClickedUpdateId(id);
     setClicked(false);
@@ -38,7 +34,9 @@ function ReviewUpdateOrDelete({ id, setClickedUpdateId }: Props) {
 
   return (
     <Wrapper>
-      {!clicked && <ElipsisButton onClick={handleClick}>{<ElipsisSvg />}</ElipsisButton>}
+      {!clicked && (
+        <ElipsisButton onClick={() => setClicked((prev) => !prev)}>{<ElipsisSvg />}</ElipsisButton>
+      )}
       {clicked && (
         <>
           <Button onClick={handleUpdate}>수정</Button>

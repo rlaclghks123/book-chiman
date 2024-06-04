@@ -16,11 +16,7 @@ function Select({ options, setter, defaultValue, required = false }: Props) {
 
   return (
     <Wrapper onChange={handleChange} required={required}>
-      {defaultValue && (
-        <Option selected value="">
-          {defaultValue}
-        </Option>
-      )}
+      {defaultValue && <Option defaultValue="">{defaultValue}</Option>}
 
       {options?.map((option, idx) => (
         <Option key={idx} value={option.value}>

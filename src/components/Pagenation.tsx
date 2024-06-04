@@ -51,6 +51,8 @@ function Pagenation({ totalCount, curPage, setCurPage }: Props) {
     }
   }, [totalCount, setCurPage]);
 
+  if (totalCount === undefined) return null;
+
   return (
     <Wrapper>
       <PagenationList>
