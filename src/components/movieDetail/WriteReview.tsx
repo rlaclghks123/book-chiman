@@ -66,16 +66,16 @@ function WriteReview() {
           value={review}
           autoComplete={'off'}
         />
-
-        <Label>
-          <p>평점 ⭐️ : </p>
-          <Select setter={setScore} options={SCORE_SELECT_DATA} />
-        </Label>
-
-        <Button type="button" onClick={handleClick}>
-          댓글
-        </Button>
       </Label>
+
+      <Score>
+        <p>평점 ⭐️ : </p>
+        <Select setter={setScore} options={SCORE_SELECT_DATA} />
+      </Score>
+
+      <Button type="button" onClick={handleClick}>
+        댓글
+      </Button>
     </Wrapper>
   );
 }
@@ -84,11 +84,14 @@ export default WriteReview;
 
 const Wrapper = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
 `;
 
 const Label = styled.label`
   display: flex;
   align-items: center;
+  width: 80%;
   font-size: 18px;
   white-space: nowrap;
 `;
@@ -116,8 +119,16 @@ const Input = styled.input`
   }
 `;
 
+const Score = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 8rem;
+  white-space: nowrap;
+`;
+
 const Button = styled.button`
-  margin-left: 10px;
+  margin-left: 20px;
   padding: 10px;
 
   border: 2px solid rgba(255, 255, 255, 1);
@@ -127,6 +138,7 @@ const Button = styled.button`
   color: white;
   opacity: 0.6;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     opacity: 1;
