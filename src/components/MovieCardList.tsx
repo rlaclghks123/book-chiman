@@ -12,10 +12,10 @@ interface Props {
 }
 
 function MovieCardList({ data, isLoading }: Props) {
+  if (isLoading) return <Loading />;
+
   return (
     <GridContainer>
-      {isLoading && <Loading />}
-
       {!isLoading && !data?.length && <NotFoundData>정보가 없습니다.</NotFoundData>}
 
       {data?.map((data) => (
