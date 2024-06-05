@@ -23,16 +23,20 @@
 
 ![장르별 필터 기능](https://github.com/rlaclghks123/movie-chiman/assets/55423198/dde68154-19d3-4c01-9575-c7b5a30cdd84)
 
-#### 정렬 기능(최신순, 이름순 인기순)
+#### 정렬 기능(최신순, 이름순, 인기순)
 
 ![정렬 기능](https://github.com/rlaclghks123/movie-chiman/assets/55423198/875705d8-f419-4111-a25c-b5a05b637ace)
 
 ## 상세 페이지
 
-#### 영화 소개, 댓글, 평점, 좋아요, 평점
+#### 영화 소개, 댓글, 평점, 좋아요
 
 ![영화 소개, 댓글, 평점, 좋아요, 평점](https://github.com/rlaclghks123/movie-chiman/assets/55423198/f9a6691b-5116-4858-adf5-7c830d1fe768)
 
 #### (작성자만) 수정 및 삭제
 
 ![댓글, 평점 수정](https://github.com/rlaclghks123/movie-chiman/assets/55423198/037ab23c-1945-49d0-b423-42889d3a9a26)
+
+## 모바일 버전
+
+![모바일 버전](https://github.com/rlaclghks123/movie-chiman/assets/55423198/d2bc4e19-a161-40d5-b41a-40f4fb829aa8)
