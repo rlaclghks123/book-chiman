@@ -32,8 +32,9 @@ function UpdateReviewInput({ review, id, setClickedUpdateId }: Props) {
       score,
     };
 
-    if (review === '') {
+    if (curReview.trim() === '') {
       alert('검색어를 입력해주세요');
+      setCurReview('');
       return;
     }
 
@@ -41,9 +42,13 @@ function UpdateReviewInput({ review, id, setClickedUpdateId }: Props) {
     setClickedUpdateId(0);
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCurReview(e.target.value);
+  };
+
   return (
     <Wrapper>
-      <Input value={curReview} onChange={(e) => setCurReview(e.target.value)} />
+      <Input value={curReview} onChange={handleChange} />
       <Label>
         <p>평점 ⭐️ : </p>
         <Select setter={setScore} options={SCORE_SELECT_DATA} />

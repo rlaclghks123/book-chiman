@@ -47,8 +47,9 @@ function WriteReview() {
       writeId: localStorage.getItem('writeId'),
     };
 
-    if (review === '') {
+    if (review.trim() === '') {
       alert('검색어를 입력해주세요');
+      setReview('');
       return;
     }
     reviewMutate(result);
