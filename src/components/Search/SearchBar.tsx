@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import { searchKeywordState } from '../../atoms/searchAtom';
 import { ReactComponent as RefreshSvg } from '../../assets/svgs/refresh.svg';
+import media from '../../styles/media';
 
 function SearchBar() {
   const [curKeyword, setCurKeyword] = useState('');
@@ -50,6 +51,9 @@ const Wrapper = styled.div`
 const Form = styled.form`
   width: 100%;
   height: 80%;
+
+  display: flex;
+  justify-content: center;
 `;
 
 const SearchBarInput = styled.input`
@@ -57,15 +61,28 @@ const SearchBarInput = styled.input`
   height: 70%;
   border-radius: 10px;
   padding: 5px;
+  border: none;
 
   &::placeholder {
     padding: 0px 5px;
+
+    ${media.mobile`
+    font-size:10px;
+  `}
   }
+
+  ${media.tablet`
+    width:85%;
+  `}
+
+  ${media.mobile`
+    width:70%;
+  `}
 `;
 
 const Button = styled.button`
   position: absolute;
-  right: 0px;
+  right: 1.5rem;
   top: 15px;
 
   padding: 0px;
@@ -85,4 +102,15 @@ const Button = styled.button`
     height: 100%;
     fill: black;
   }
+
+  ${media.tablet`
+    right:8%;
+  `}
+
+  ${media.mobile`
+    top: 10px;
+    right:-4%;
+    width: 50%;
+    height: 50%;
+  `}
 `;

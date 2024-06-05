@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ReactComponent as GithubSvg } from '../assets/svgs/github.svg';
 import { ReactComponent as FileSvg } from '../assets/svgs/file.svg';
+import media from '../styles/media';
 
 const DESCRIPTION_DATA = [
   { title: '이름', content: '김치환' },
@@ -52,15 +53,24 @@ const Wrapper = styled.div`
   height: 100%;
 
   padding-top: 5rem;
-  padding: 5rem 20rem;
+  padding: 5rem 30%;
   box-sizing: border-box;
 `;
 
 const Title = styled.h1`
   width: 100%;
   font-size: 1.8rem;
-  text-align: center;
-  /* white-space: nowrap; */
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+
+  ${media.tablet`
+    font-size:1rem;
+  `}
+
+  ${media.mobile`
+    font-size:0.8rem;
+  `}
 `;
 
 const Introduce = styled.section`
@@ -78,6 +88,16 @@ const Img = styled.img`
   height: 400px;
   border-radius: 15px;
   box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.12), 0 1px 1px;
+
+  ${media.tablet`
+    width: 250px;
+    height: 300px;
+  `}
+
+  ${media.mobile`
+    width: 150px;
+    height: 200px;
+  `}
 `;
 
 const DescriptionTitle = styled.div`
@@ -97,6 +117,14 @@ const Description = styled.ul`
 
   color: white;
   font-size: 20px;
+
+  ${media.tablet`
+    font-size:15px;
+  `}
+
+  ${media.mobile`
+    font-size:12px;
+  `}
 `;
 
 const DescriptionList = styled.li`

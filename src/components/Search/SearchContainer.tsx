@@ -4,6 +4,7 @@ import SelectViewRadio from './SelectViewRadio';
 import SearchBar from './SearchBar';
 import SearchSortSelect from './SearchSortSelect';
 import SearchFilterSelect from './SearchFilterSelect';
+import media from '../../styles/media';
 
 function SearchContainer() {
   return (
@@ -29,6 +30,11 @@ const Wrapper = styled.section`
 
   width: 100%;
   height: 3rem;
+
+  ${media.mobile`
+    flex-direction:column;
+    gap:10px;
+  `}
 `;
 
 const SelectBox = styled.div`

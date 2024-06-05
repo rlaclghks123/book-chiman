@@ -16,6 +16,7 @@ import {
   viewTypeState,
 } from '../atoms/searchAtom';
 import { Movie } from '../types/movies';
+import media from '../styles/media';
 
 interface Movies {
   data: Movie[];
@@ -67,6 +68,14 @@ const Wrapper = styled.div`
   background-color: black;
   padding: 2rem 10rem 0 10rem;
   box-sizing: border-box;
+
+  ${media.tablet`
+  padding: 2rem 7.5rem 0 7.5rem;
+  `}
+
+  ${media.mobile`
+    padding: 2rem 2rem 0 2rem;
+  `}
 `;
 
 const ViewContainer = styled.div`

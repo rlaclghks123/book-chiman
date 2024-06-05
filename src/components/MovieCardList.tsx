@@ -5,6 +5,7 @@ import { IMG_BASE_URL } from '../constants/movie';
 import { Movie } from '../types/movies';
 import { toStringGenresWithComma } from '../utils/toStringGenresWithComma';
 import Loading from './common/Loading';
+import media from '../styles/media';
 
 interface Props {
   data: Movie[];
@@ -52,6 +53,16 @@ const GridContainer = styled.section`
   width: 100%;
   height: 100%;
   overflow: auto;
+
+  ${media.tablet`
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 10rem);
+  `}
+
+  ${media.mobile`
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 10rem);
+  `}
 `;
 
 const GridItemLink = styled(Link)`

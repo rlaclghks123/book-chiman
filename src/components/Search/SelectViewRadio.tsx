@@ -44,6 +44,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
+  white-space: nowrap;
 `;
 
 const Label = styled.label`
