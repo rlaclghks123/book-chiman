@@ -130,7 +130,7 @@ const Score = styled.div`
 `;
 
 const Button = styled.button`
-  margin-left: 10px;
+  margin-left: 20px;
   padding: 10px;
 
   border: 2px solid rgba(255, 255, 255, 1);
