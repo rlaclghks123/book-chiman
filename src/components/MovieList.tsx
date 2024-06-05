@@ -105,11 +105,6 @@ const ListOrder = styled.div`
     font-size: 16px;
     min-width: 1.5rem;
   `}
-
-  ${media.mobile`
-    font-size: 13px;
-    min-width: 0.5rem;
-  `}
 `;
 
 const Img = styled.img`

@@ -33,7 +33,7 @@ function WriteReview() {
   const handleClick = () => {
     const writeId = localStorage.getItem('writeId');
 
-    if (!writeId) {
+    if (writeId === null) {
       const random = String(Math.random() * 100);
       localStorage.setItem('writeId', random);
     }
@@ -44,7 +44,7 @@ function WriteReview() {
       like: 0,
       score,
       createAt: new Date().toISOString().split('T')[0],
-      writeId,
+      writeId: localStorage.getItem('writeId'),
     };
 
     if (review === '') {
