@@ -55,6 +55,10 @@ const Wrapper = styled.div`
   padding-top: 5rem;
   padding: 5rem 30%;
   box-sizing: border-box;
+
+  ${media.mobile`
+    padding: 5rem 15%;
+  `}
 `;
 
 const Title = styled.h1`
@@ -125,7 +129,9 @@ const Description = styled.ul`
 
   ${media.tablet`
     font-size:15px;
-    width:100%;
+    width: 200px;
+    height: 200px;
+
   `}
 `;
 
