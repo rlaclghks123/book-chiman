@@ -4,6 +4,7 @@ import { ReactComponent as SpinnerSvg } from '../../assets/svgs/spinner.svg';
 function Loading() {
   return (
     <Wrapper>
+      <div>최대 10초정도 걸릴 수 있습니다</div>
       <Spinner>
         <SpinnerSvg />
       </Spinner>
@@ -14,8 +15,14 @@ function Loading() {
 export default Loading;
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   margin: 0 auto;
   margin-top: 50px;
+  gap: 20px;
 `;
 
 const spinEffect = keyframes`
