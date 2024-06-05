@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 
 interface Props {
@@ -10,6 +10,7 @@ interface Props {
 function Select({ options, setter }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const [curName, setCurName] = useState(options[0].name);
+  const ref = useRef<HTMLDivElement>(null);
 
   const handleClick = (option: { [key: string]: string | number | undefined }) => {
     setIsOpen((prev) => !prev);
@@ -17,8 +18,21 @@ function Select({ options, setter }: Props) {
     setter(option.value);
   };
 
+  const handleOutsideClick = (event: MouseEvent) => {
+    if (ref.current && !ref.current.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
+
   return (
-    <Wrapper>
+    <Wrapper ref={ref}>
       {!isOpen && <SelectButton onClick={() => setIsOpen(true)}>{curName}</SelectButton>}
       {isOpen && (
         <Ul>
