@@ -8,7 +8,7 @@ const HEADER_DATA = [
 
 function Header() {
   return (
-    <header>
+    <HeaderBox>
       <Ul>
         {HEADER_DATA.map((list) => (
           <Li key={list.id}>
@@ -16,7 +16,7 @@ function Header() {
           </Li>
         ))}
       </Ul>
-    </header>
+    </HeaderBox>
   );
 }
 
@@ -40,14 +40,23 @@ const Wrapper = styled.div`
   color: white;
 `;
 
+const HeaderBox = styled.header`
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+
+  height: 70px;
+  width: 100vw;
+  border-bottom: 1px solid grey;
+  background-color: black;
+`;
+
 const Ul = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-
-  height: 70px;
-  background-color: #2d2d2d;
+  height: 100%;
 `;
 
 const Li = styled.li`
@@ -55,6 +64,9 @@ const Li = styled.li`
   align-items: center;
   padding-bottom: 5px;
   font-size: 1.5rem;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  font-style: normal;
 
   &:hover {
     border-bottom: 1px solid #86868b;
@@ -67,4 +79,5 @@ const Li = styled.li`
 
 const Main = styled.main`
   height: calc(100vh - 70px);
+  padding-top: 70px;
 `;

@@ -28,7 +28,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-   font-family: 'Montserrat', sans-serif;
+   font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
    background-color: black;
 }
 ol, ul {
