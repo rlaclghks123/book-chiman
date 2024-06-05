@@ -8,6 +8,7 @@ import ReadReview from '../components/movieDetail/ReadReview';
 import { useMovieDetail } from '../hooks/api/useMovieDetail';
 import { Movie } from '../types/movies';
 import Loading from '../components/common/Loading';
+import media from '../styles/media';
 
 export interface MovieDetail {
   data: Movie;
@@ -39,6 +40,14 @@ export default MoviesDetailPage;
 
 const Wrapper = styled.section`
   padding: 3rem 20rem 0rem 20rem;
+
+  ${media.tablet`
+    padding: 2rem 7.5rem 0 7.5rem;
+  `}
+
+  ${media.mobile`
+    padding: 2rem 2rem 0 2rem;
+  `}
 `;
 
 const ReviewContainer = styled.section`

@@ -94,7 +94,7 @@ const Introduce = styled.section`
 
 const Img = styled.img`
   width: 350px;
-  height: 400px;
+  height: 350px;
   border-radius: 15px;
   box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.12), 0 1px 1px;
 

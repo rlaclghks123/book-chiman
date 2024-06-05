@@ -13,6 +13,7 @@ import { AddLike, Review } from '../../types/reviews';
 import { ReactComponent as ProfileSvg } from '../../assets/svgs/profile.svg';
 import { ReactComponent as UnClickedLikeSvg } from '../../assets/svgs/unlike.svg';
 import { ReactComponent as ClickedLikeSvg } from '../../assets/svgs/clickedLike.svg';
+import media from '../../styles/media';
 
 function isWriter(writeId: string | null) {
   const writeIdInLocalstorage = localStorage.getItem('writeId');
@@ -138,6 +139,7 @@ const Description = styled.div`
   width: 85%;
   position: relative;
   margin-left: 15px;
+  white-space: nowrap;
 
   svg {
     width: 20px;
@@ -182,4 +184,8 @@ const WriterAndTimeStamp = styled.div`
       color: grey;
     }
   }
+
+  ${media.mobile`
+    font-size:12px;
+  `}
 `;

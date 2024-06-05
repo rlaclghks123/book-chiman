@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { saveReviewFetcher } from '../../api/saveReviewFetcher';
 import { Review } from '../../types/reviews';
 import Select from '../common/Select';
+import media from '../../styles/media';
 
 export const SCORE_SELECT_DATA = Array.from({ length: 5 }, (_, i) => {
   return {
@@ -69,14 +70,16 @@ function WriteReview() {
         />
       </Label>
 
-      <Score>
-        <p>평점 ⭐️ : </p>
-        <Select setter={setScore} options={SCORE_SELECT_DATA} />
-      </Score>
+      <ScoreAndSubmit>
+        <Score>
+          <p>평점 ⭐️ : </p>
+          <Select setter={setScore} options={SCORE_SELECT_DATA} />
+        </Score>
 
-      <Button type="button" onClick={handleClick}>
-        댓글
-      </Button>
+        <Button type="button" onClick={handleClick}>
+          댓글
+        </Button>
+      </ScoreAndSubmit>
     </Wrapper>
   );
 }
@@ -87,6 +90,11 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+
+  ${media.mobile`
+    flex-direction: column;
+    align-items: flex-start;
+  `}
 `;
 
 const Label = styled.label`
@@ -119,6 +127,10 @@ const Input = styled.input`
   &:focus {
     border-bottom: 2px solid rgba(255, 255, 255, 1);
   }
+
+  ${media.mobile`
+    margin-left:4rem;
+  `}
 `;
 
 const Score = styled.div`
@@ -127,6 +139,14 @@ const Score = styled.div`
   gap: 15px;
   width: 8rem;
   white-space: nowrap;
+`;
+
+const ScoreAndSubmit = styled.div`
+  display: flex;
+
+  ${media.mobile`
+    margin-top:10px;
+  `}
 `;
 
 const Button = styled.button`

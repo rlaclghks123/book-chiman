@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import { deleteReviewFetcher } from '../../api/deleteReviewFetcher';
 import { ReactComponent as ElipsisSvg } from '../../assets/svgs/elipsis.svg';
+import media from '../../styles/media';
 
 interface Props {
   id: number;
@@ -53,6 +54,11 @@ const Wrapper = styled.div`
   position: absolute;
   display: flex;
   right: 0;
+
+  ${media.mobile`
+    flex-direction: column;
+    gap:5px;
+  `}
 `;
 
 const ElipsisButton = styled.button`

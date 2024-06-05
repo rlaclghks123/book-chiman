@@ -6,6 +6,7 @@ import { updateReviewFetcher } from '../../api/updateReviewFetcher';
 import { UpdateReview } from '../../types/reviews';
 import { SCORE_SELECT_DATA } from './WriteReview';
 import Select from '../common/Select';
+import media from '../../styles/media';
 
 interface Props {
   review: string;
@@ -49,10 +50,10 @@ function UpdateReviewInput({ review, id, setClickedUpdateId }: Props) {
   return (
     <Wrapper>
       <Input value={curReview} onChange={handleChange} />
-      <Label>
+      <Score>
         <p>평점 ⭐️ : </p>
         <Select setter={setScore} options={SCORE_SELECT_DATA} />
-      </Label>
+      </Score>
       <Button type="button" onClick={() => handleClick(id)}>
         수정
       </Button>
@@ -64,6 +65,11 @@ export default UpdateReviewInput;
 
 const Wrapper = styled.div`
   display: flex;
+
+  ${media.mobile`
+    flex-direction: column;
+    gap:10px;
+  `}
 `;
 
 const Input = styled.input`
@@ -82,10 +88,14 @@ const Input = styled.input`
   &:focus {
     border-bottom: 2px solid rgba(255, 255, 255, 1);
   }
+
+  ${media.mobile`
+    width:15rem;
+  `}
 `;
 
 const Button = styled.button`
-  margin-left: 10px;
+  margin-left: 20px;
   padding: 10px;
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 1);
@@ -101,11 +111,17 @@ const Button = styled.button`
     color: black;
     background-color: white;
   }
+
+  ${media.mobile`
+    width:5rem;
+    margin-left: 0px;
+  `}
 `;
 
-const Label = styled.label`
+const Score = styled.div`
   display: flex;
   align-items: center;
-  font-size: 20px;
+  gap: 15px;
+  width: 8rem;
   white-space: nowrap;
 `;

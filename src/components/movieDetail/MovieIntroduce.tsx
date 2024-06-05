@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { toStringGenresWithComma } from '../../utils/toStringGenresWithComma';
 import { IMG_BASE_URL } from '../../constants/movie';
 import { Movie } from '../../types/movies';
+import media from '../../styles/media';
 
 interface Props {
   data: Movie;
@@ -37,6 +38,11 @@ const Wrapper = styled.div`
   width: 100%;
 
   overflow: hidden;
+  ${media.mobile`
+  flex-direction:column;
+  align-items: center;
+
+  `}
 `;
 
 const Img = styled.img`
@@ -47,6 +53,16 @@ const Img = styled.img`
   height: 250px;
 
   background-color: grey;
+
+  ${media.tablet`
+    min-width: 200px;
+    height: 200px;
+  `}
+
+  ${media.mobile`
+    width: 50px;
+    height: 250px;
+  `}
 `;
 
 const Description = styled.div`
@@ -68,4 +84,8 @@ const DescriptionParagraph = styled.p`
     overflow: auto;
     line-height: 1.2;
   }
+
+  ${media.mobile`
+    font-size:15px;
+  `}
 `;
