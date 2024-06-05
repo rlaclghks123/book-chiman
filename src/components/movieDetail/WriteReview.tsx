@@ -58,7 +58,7 @@ function WriteReview() {
   return (
     <Wrapper>
       <Label htmlFor="writer">
-        <Writer>익명 사용자 : </Writer>
+        <Writer>익명 사용자 </Writer>
         <Input
           id="writer"
           placeholder="댓글 추가..."
@@ -99,6 +99,7 @@ const Label = styled.label`
 const Writer = styled.div`
   width: 10%;
   white-space: nowrap;
+  margin-right: 15px;
 `;
 
 const Input = styled.input`
@@ -128,7 +129,7 @@ const Score = styled.div`
 `;
 
 const Button = styled.button`
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 10px;
 
   border: 2px solid rgba(255, 255, 255, 1);

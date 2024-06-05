@@ -23,18 +23,16 @@ function HomePage() {
           alt="PROFILE"
         />
         <Description>
-          {DESCRIPTION_DATA.map((description) => (
-            <Paragraph>
+          {DESCRIPTION_DATA.map((description, idx) => (
+            <DescriptionList key={idx}>
               <DescriptionTitle>{description.title}</DescriptionTitle>
               {description.link && (
-                <div>
-                  <a href={description.link} target="blank">
-                    {description.content}
-                  </a>
-                </div>
+                <a href={description.link} target="blank">
+                  {description.content}
+                </a>
               )}
               {!description.link && <div>{description.content}</div>}
-            </Paragraph>
+            </DescriptionList>
           ))}
         </Description>
       </Introduce>
@@ -60,9 +58,9 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   width: 100%;
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 `;
 
 const Introduce = styled.section`
@@ -89,7 +87,7 @@ const DescriptionTitle = styled.div`
   border-right: 2px solid white;
 `;
 
-const Description = styled.div`
+const Description = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -101,7 +99,7 @@ const Description = styled.div`
   font-size: 20px;
 `;
 
-const Paragraph = styled.p`
+const DescriptionList = styled.li`
   display: flex;
   align-items: center;
   gap: 10px;
