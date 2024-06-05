@@ -5,6 +5,7 @@ import { Movie } from '../types/movies';
 import { IMG_BASE_URL } from '../constants/movie';
 import { toStringGenresWithComma } from '../utils/toStringGenresWithComma';
 import Loading from './common/Loading';
+import media from '../styles/media';
 
 interface Props {
   data: Movie[];
@@ -99,6 +100,16 @@ const NotFoundData = styled.div`
 const ListOrder = styled.div`
   font-size: 25px;
   min-width: 2rem;
+
+  ${media.tablet`
+    font-size: 16px;
+    min-width: 1.5rem;
+  `}
+
+  ${media.mobile`
+    font-size: 13px;
+    min-width: 0.5rem;
+  `}
 `;
 
 const Img = styled.img`
@@ -129,4 +140,14 @@ const DescriptionParagraph = styled.p`
   font-family: 'Montserrat', sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  ${media.tablet`
+    font-size: 16px;
+  `}
+
+  ${media.mobile`
+    &:not(:first-child) {
+      display: none;
+    }
+  `}
 `;
