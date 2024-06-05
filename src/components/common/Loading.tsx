@@ -4,7 +4,7 @@ import { ReactComponent as SpinnerSvg } from '../../assets/svgs/spinner.svg';
 function Loading() {
   return (
     <Wrapper>
-      <div>최대 10초정도 걸릴 수 있습니다</div>
+      <div>최대 15초정도 걸릴 수 있습니다</div>
       <Spinner>
         <SpinnerSvg />
       </Spinner>
