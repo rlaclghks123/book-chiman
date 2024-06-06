@@ -27,11 +27,30 @@ function ReadReview() {
   const [clickedUpdateId, setClickedUpdateId] = useState(0);
 
   const queryClient = useQueryClient();
-
   const { mutate: likeMutate } = useMutation({
     mutationFn: (payload: AddLike) => addLikeFetcher(payload),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['reviews'] }),
-    onError: () => alert('실패했습니다!'),
+
+    onMutate: async (newReview) => {
+      await queryClient.cancelQueries({ queryKey: ['reviews', id] });
+
+      const previousReviews = queryClient.getQueryData<Review[]>(['reviews', id]);
+
+      const updatedReviews = previousReviews?.map((review) => {
+        if (review.id === Number(newReview.listId)) {
+          return { ...review, like: newReview.like };
+        } else return review;
+      });
+
+      queryClient.setQueryData(['reviews', id], updatedReviews);
+
+      return { previousReviews, updatedReviews };
+    },
+
+    onError: (err, newTodo, context) => {
+      alert('좋아요를 수정할 수 없습니다.');
+      queryClient.setQueryData(['reviews', id], context?.previousReviews);
+      setClickedLikeId({});
+    },
   });
 
   const handleClickLike = (e: React.MouseEvent<HTMLElement>, id: number) => {
